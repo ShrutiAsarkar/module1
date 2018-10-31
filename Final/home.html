@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>TO-DO LIST</title>
+<meta charset="utf-8" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="./css/1.css">
+		<link rel="stylesheet" href="./css/main1.css">
+		<link rel="stylesheet" href="./css/try2.css">		
+</head>
+<body onload="doShowAll()">
+	<div id="big_wrapper">
+		<header id="top_header"><p><img src="./images/bgg.jpg" alt="Cinque Terre" width="200" height="150" style="float:right";>
+			<h1><b>Human Cloud Business Solutions</h1>
+			<h4><b>-------Your TODO LIST--------</h4>
+			</p>
+			</header>
+		
+		<nav id="top_menue">
+				<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Connect Us</a></li>
+				<li><a href="#">About us</a></li>
+			<ul>
+			
+		</nav>
+		
+		<div id="new_div">
+		
+		<section id="main_section">
+			<div id="box" class="container">
+			<div class="title">
+				<h2>TO-DO LIST</h2>
+			</div>
+
+			<div id="editor">
+			<form><p>
+				<div class="col-sm-6"><INPUT type="button" value="Add Item" class="btn btn-success" onclick="addRow()" /></div>
+				<div class="col-sm-6"><INPUT type="button" value="Delete Item" class="btn btn-primary" onclick="deleteRow()" /></div>
+				</p><br>
+				<div class="container">
+				<p>
+					<div id="task1"><label>Task:</label><br>
+					<input id="taskName" type="text" placeholder="Add items in your list"/></div>
+					<div id="date1"><label>Date Created:</label><br>
+					<input id="dateTask" type="date"/></div>
+					
+				</form>
+				</p>
+				<p>
+				<table id="myTable" border="1" class="table table-striped" style="width:550px;">
+					<thead>To Do List</thead>
+					<th id="th1"> Select to delete </th>
+					<th id="th2"> Task Name </th>
+					<th id="th3"> Date Created </th>
+					
+					<tbody id="tableBody"></tbody>
+				</table>
+				</p>
+			</div>
+				
+		</div>
+		
+		</section>
+		
+		<aside id="side_news">
+			<form>
+				<div class="form-group"><label for="email">Email address:</label>
+					<INPUT type="email" class="form-control" id="email" placeholder="abc@humancloud.in"/></td></tr>
+				</div>
+				<div class="form-group"><label for="pwd">Password:</label>
+					<INPUT type="password" class="form-control" id="pwd"placeholder="**********"/><br>
+					<a href="#">Forgetten password??</a>
+				</div>
+				<div><button type="sign_in" class="btn btn-success">Sign In</button>
+				<button type="sign_up" class="btn btn-primary">Sign Up</button></div>
+			</form>	
+		</aside>
+		
+		</div>
+		<footer id="footer">
+			<p>&copy; Copyright India 2018 | <a href="#">privacy policy</a> | <a href="#">Contact us <span class="glyphicon glyphicon-envelope"></span></a> | Terms & Conditions</p> 
+		</footer>
+	</div>	
+	<script src="./js/final.js"></script>
+</body>
+</html>
